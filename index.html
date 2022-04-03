@@ -10,25 +10,31 @@
       crossorigin="anonymous"
     ></script>
     <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav id="menu">
-      <div class="menu__list">
-        <div class="menu__item">Gmail</div>
-        <div class="menu__item">이미지</div>
-        <div class="menu__item">
+      <ul>
+        <li class="menu__item a">Gmail</li>
+        <li class="menu__item a">이미지</li>
+        <li class="menu__item a icon">
           <i class="fa-solid fa-bars"></i>
-        </div>
-        <div class="menu__item">
-          <img src="img/profile.png" alt="profile" />
-        </div>
-      </div>
+        </li>
+        <li class="menu__item profile">
+          <img src="img/profile.png" alt="profile" class="profile" />
+        </li>
+      </ul>
     </nav>
     <section id="body">
-      <div class="body__logo"></div>
+      <div class="body__logo">
+        <h1>Google</h1>
+      </div>
       <div class="body__search">
         <div class="search__icon">
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <i
+            class="fa-solid fa-magnifying-glass"
+            style="background-color: white"
+          ></i>
         </div>
         <div class="search__body">
           <input
@@ -38,7 +44,7 @@
           />
         </div>
         <div class="search__voice">
-          <i class="fa-solid fa-microphone"></i>
+          <i class="fa-solid fa-microphone" style="background-color: white"></i>
         </div>
       </div>
       <div class="body__quick">
@@ -72,8 +78,10 @@
         </div>
       </div>
       <div class="body__sidemenu">
-        <i class="fa-solid fa-pen"></i>
-        <p>Chrome 맞춤설정</p>
+        <span class="sidemenu__icon">
+          <i class="fa-solid fa-pen"></i>
+        </span>
+        <span class="sidemenu__text">Chrome 맞춤설정</span>
       </div>
     </section>
   </body>
