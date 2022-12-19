@@ -1,2 +1,2 @@
 # chrome
- Chrome Clone-Coding
+크롬 클론코딩 (민트)
